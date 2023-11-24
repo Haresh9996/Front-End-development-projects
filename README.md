@@ -1,4 +1,3 @@
 - Go adventure is a webpage aimed at travelers looking for a multiple of adventures worldwide.
-- Created web page using HTML, CSS and utilized Bootstrap extensively for responsive design with mobile first approach and made them dynamic using JavaScript.
-- 
+- Created website using HTML, CSS and utilized Bootstrap extensively for responsive design with mobile first approach and made them dynamic using JavaScript.
 - Skills: HTML, CSS, JavaScript and Bootstrap.
