@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>log in</title>
+    <link rel="icon" href="../images/logo.png">
+    <style>
+        * {
+            padding: 0;
+            margin: 0;
+            box-sizing: border-box;
+            overflow: hidden;
+        }
+
+        body {
+            background-color: lightgray;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            width: 100%;
+        }
+
+        .container {
+            /* border: 1px solid black; */
+            box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+            height: 300px;
+            width: 300px;
+            background-color: whitesmoke;
+            border-radius: 8px;
+            padding: 25px;
+        }
+
+        .container h2 {
+            text-align: center;
+            color: gray;
+        }
+
+        form {
+            height: 100%;
+            width: 100%;
+            display: grid;
+            place-content: center;
+            gap: 5px;
+        }
+
+        form input {
+            padding: 10px;
+            width: 200px;
+            border-radius: 5px;
+            border: 1px solid grey;
+        }
+
+        .submit {
+            background-color: #0d6efd;
+            color: aliceblue;
+            font-size: 15px;
+            box-shadow: 0 0 8px grey;
+            transition: all 0.2s;
+        }
+
+        .submit:hover {
+            background-color: #0b5fdd;
+        }
+
+        .error {
+            height: 20px;
+            color: red;
+        }
+
+        .create {
+            margin-top: 20px;
+        }
+
+        .create a:hover {
+            color: grey;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <h2>Log in</h2>
+        <form action="" onsubmit="return formvalidate()">
+            <input type="text" name="" placeholder="Enter your Username" id="user" class="username" required>
+
+            <input type="password" name="" placeholder="Enter your Password" id="password" class="password" required>
+
+            <div class="error" id="error"> </div>
+
+            <input type="submit" value="SUBMIT" class="submit">
+            <div class="create">
+                <a href="Sign Up.html">Don't have an Account?</a>
+            </div>
+        </form>
+    </div>
+    <script>
+        let user = document.getElementById("user").value;
+        let password = document.getElementById("password").value;
+        let error = document.getElementById("error");
+
+        function formvalidate() {
+
+            if (password.length <= 5 && user.length <= 3) {
+                error.innerHTML = "Enter valid Username or Password"
+            }
+
+            return false;
+        }
+    </script>
+</body>
+
+</html>

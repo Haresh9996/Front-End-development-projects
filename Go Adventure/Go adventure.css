@@ -1,0 +1,218 @@
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@500&display=swap');
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Quicksand', sans-serif;
+}
+
+.container-fluid{
+    position: relative;
+}
+
+.header {
+    background-image: url(images/header.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    max-height: 1000px;
+}
+
+img {
+    width: 150px;
+}
+
+.nav-title {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+.details-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+}
+
+.details {
+    text-align: center;
+    /* line-height: 40px; */
+    color: whitesmoke;
+}
+
+.search-box {
+    width: 50VW;
+    display: flex;
+}
+
+.search-box .col-auto input {
+    width: 40vw;
+}
+
+.trips{
+    width: 100%;
+}
+
+.card {
+    overflow: hidden;
+    width: 100%;
+}
+
+.card>img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+    transition: all 0.5s;
+}
+
+.card>img:hover {
+    transform: scale(1.1);
+    filter: brightness(0.7);
+}
+
+.icon{
+    line-height: 12px;
+    color: rgb(14, 14, 105);
+}
+.icon img{
+    width: 200px;
+    height: 170px;
+}
+.bg-mob{
+    height: 400px;
+    background-image: url(images/pexels-stijn-dijkstra-2674064.jpg);
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.bg-mob .data{
+    max-width: 50%;
+    color: #969efc;
+    overflow: hidden;
+    max-height: 100%;
+}
+.data .log{
+    text-shadow: 2px 2px 10px white;
+}
+
+.bg-mob .mob-img{
+    width: 40%;
+}
+
+.mob-img img{
+    width: 300px;
+}
+
+.parent{
+    position: relative;
+}
+
+.video:hover{
+    filter: brightness(0.7);
+}
+
+.aus{
+    height: 250px;
+    width: 60%;
+    overflow: hidden
+}
+.aus-video{
+    width: 100%;
+}
+.child-aus{
+    position: absolute;
+    bottom: 0;
+    left: 10%;
+    z-index: 1;
+}
+
+.india{
+    width: 40%;
+    height: 250px;
+    overflow: hidden;
+}
+.ind-video{
+    width: 100%;
+    height: 100%;
+}
+.child-ind{
+    position: absolute;
+    top: 0;
+    left: 10%;
+}
+.peru{
+    height: 300px;
+    width: 20%;
+    overflow: hidden;
+}
+.peru-video{
+    width: 100%;
+    height: 100%;
+}
+.child-peru{
+    position: absolute;
+    bottom: 0;
+    left: 20%;
+}
+.bali{
+    height: 400px;
+    width: 40%;
+    overflow: hidden;
+}
+.bali-video{
+    width: 100%;
+    height: 100%;
+}
+.child-bali{
+    position: absolute;
+    bottom: 50px;
+    left: 40%;
+}
+.kerala{
+    height: 300px;
+    width: 20%;
+    overflow: hidden;
+}
+.kerala-video{
+    width: 100%;
+    height: 100%;
+}
+.child-kerala{
+    position: absolute;
+    bottom: 0;
+    left: 15%;
+}
+.saving{
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.528);
+}
+.sav-video{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -10;
+}
+.deals{
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    justify-content: space-around;
+}
+.d-data{
+    max-width: fit-content;
+    margin: 0 20px;
+}
+
+@media (max-width: 700px){
+    .deals{
+        grid-template-columns: auto auto auto auto;
+    }
+}
