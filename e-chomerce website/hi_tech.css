@@ -1,0 +1,89 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+}
+
+.head{
+    height: 90vh;
+    width: 100%;
+    background: linear-gradient(to right, rgba(46, 251, 254, 0.665), rgba(0, 0, 0, 0)), url(images/watch\ background_2.jpg);
+    background-position: right center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: aliceblue;
+}
+.title{
+    -webkit-text-stroke: 1px whitesmoke;
+    color: transparent;
+    cursor: pointer;
+}
+.title:hover{
+    color: whitesmoke;
+}
+.head-title{
+    width: 50%;
+    height: 100%;
+}
+
+.btn-title button{
+    padding: 10px 40px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    font-weight: 500;
+}
+
+.btn-title button:hover{
+    filter: brightness(0.7);
+}
+
+.btn-title .btn-first{
+    background-color: #19c880;
+}
+
+.btn-title .btn-second{
+    background-color: #5a1b9d;
+}
+
+
+.icon-img{
+    transform: scale(2);
+    position: relative;
+    top: 40px;
+}
+
+.watch-demo{
+    height: fit-content;
+    width: 100%;
+}
+
+.sell{
+    padding: 10px 40px;
+    margin: 5px;
+    border: none;
+    outline: none;
+    color: aliceblue;
+    font-weight: 500;
+    background-color: #19c880;
+}
+
+.card:hover{
+    box-shadow: 0px 3px 10px grey;
+    filter: brightness(90%);
+}
+
+.card-body{
+    cursor: pointer;
+}
+
+.checked{
+    color: orange;
+}
+
+.social-icon{
+    width: 20px;
+    height: 20px;
+}
