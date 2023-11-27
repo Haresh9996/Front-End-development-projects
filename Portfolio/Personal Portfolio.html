@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>haresh's portfolio</title>
+    <link rel="stylesheet" href="Personal Portfolio.css">
+</head>
+
+<body>
+    <nav>
+        <div class="left">
+            haresh's portfolio
+        </div>
+        <ul class="right">
+            <li><a href="http://127.0.0.1:5500/my%20personal%20portfolio.html">Home</a></li>
+            <li><a href="">About</a></li>
+            <li><a href="">Services</a></li>
+            <li><a href="">Projects</a></li>
+        </ul>
+    </nav>
+    <header>
+        <section>
+            <h1 class="name">Hello,<br>
+                <span id="element"></span>
+            </h1>
+            <p class="text">You can reach out to me, if you need any help in making a website for you or your business.
+            </p>
+            <a href="#" id="contact">Contact Me</a>
+            <a href="#" id="resume">Download Resume</a>
+        </section>
+        <div class="image">
+            <img src="images/haresh new png.png" alt="" data-tilt>
+        </div>
+    </header>
+    <main class="main">
+        <hr>
+        <h1 class="h1">Projects</h1>
+        <hr>
+        <div class="project">
+            <div class="product-image">
+                <div class="image-data">
+                    <h1>Profile Card</h1>
+                    <p class="data">Created a Card using <br> HTML 5, CSS 3, javascript.</p>
+                </div>
+                <a href="excersizes/card/card design.html">
+                    <img src="images/card.png" alt="">
+                </a>
+            </div>
+            <div class="product-image">
+                <div class="image-data">
+                    <h1>Word counter</h1>
+                    <p class="data">Created a Word counter using <br> HTML 5, CSS 3, javascript.</p>
+                </div>
+                <a href="excersizes/word counter.html">
+                    <img src="images/word counter.png" alt="">
+                </a>
+            </div>
+            <div class="product-image">
+                <div class="image-data">
+                    <h1>Stopwatch</h1>
+                    <p class="data">Created a Stopwatch using <br>HTML 5, CSS 3, javascript.</p>
+                </div>
+                <a href="excersizes/stopwatch.html">
+                    <img src="images/stopwatch.png" alt="">
+                </a>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="foot">
+            <div class="ul">
+                <ul>
+                    <li>web development</li>
+                    <li>web designing</li>
+                    <li>problem solving</li>
+                </ul>
+                <ul>
+                    <li>HTML</li>
+                    <li>CSS</li>
+                    <li>Javascript</li>
+                    <li>BOOTSTRAP</li>
+                </ul>
+            </div>
+            <p>@haresh chudasama portfolio | all rights are reserved</p>
+        </div>
+    </footer>
+    <script src="vanilla-tilt.babel.js"></script>
+    <script src="https://unpkg.com/typed.js@2.0.16/dist/typed.umd.js"></script>
+
+    <script>
+        var typed = new Typed('#element', {
+            strings: ["I'm Haresh Chudasama.", "I'm a Front End Web Developer."],
+            typeSpeed: 100,
+            backSpeed: 50,
+            loop: true
+        });
+    </script>
+
+
+</body>
+
+</html>
