@@ -13,6 +13,7 @@
 
 .header {
     background-image: url(images/header.jpg);
+    background-attachment: fixed;
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -55,11 +56,38 @@ img {
 
 .trips{
     width: 100%;
+    position: relative;
+    overflow-x: hidden;
 }
+
+.card-first{
+    /* position: absolute; */
+    /* left: -100%; */
+    /* opacity: 0.7;
+    scale: 0.5; */
+
+    animation: static linear;
+    animation-timeline: view();
+    animation-range-start: 500px;
+    animation-range-end: 800px;
+}
+
+@keyframes static {
+    to{
+        /* position: static; */
+        /* left: 0; */
+        opacity: 1;
+        scale: 1;
+    }
+}
+
 
 .card {
     overflow: hidden;
     width: 100%;
+}
+
+.card-first{
 }
 
 .card>img {
@@ -87,6 +115,7 @@ img {
     height: 400px;
     background-image: url(images/pexels-stijn-dijkstra-2674064.jpg);
     background-position: bottom;
+    background-attachment: fixed;
     background-size: cover;
     background-repeat: no-repeat;
 }
